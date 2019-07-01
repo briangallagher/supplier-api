@@ -10,7 +10,7 @@ app.use(bodyParser());
 
 app.use('/orders', require('./routes/orders.js')());
 
-var port = process.env.OPENSHIFT_NODEJS_PORT || 8001;
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 app.listen(port, function() {
   console.info('Suppliers app started on port', port);
 });
